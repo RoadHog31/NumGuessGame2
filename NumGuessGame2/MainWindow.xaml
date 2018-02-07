@@ -1,0 +1,16 @@
+﻿<Window x:Name="numGuessGame" x:Class="NumGuessGame2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="400" Width="700" Background="#FF5466DC" Foreground="#FFB9ADAD" BorderBrush="#FF999191" Cursor="Arrow">
+    <Grid x:Name="gameGrid">
+        <Button x:Name="btn_Raise" Content="Raise My Guess" HorizontalAlignment="Left" Margin="61,45,0,0" VerticalAlignment="Top" Width="229" Height="44" Background="#FF213E8D" BorderBrush="White" Click="Button_Click" Foreground="White" ClickMode="Press"/>
+        <TextBlock x:Name="txt_Intro" HorizontalAlignment="Left" Margin="434,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="203" Width="229" Foreground="White" Background="#FF5466DC"><Run Background="#FF5466DC" Text="Welcome to the number guessing game."/><LineBreak/><Run Background="#FF5466DC" Text="In this game you must use the buttons above and below the guessing box to set the number you wish to guess."/><LineBreak/><LineBreak/><Run Background="#FF5466DC" Text="The computer will then pick a random number between 1 and 10. "/><LineBreak/><LineBreak/><Run Background="#FF5466DC" Text="To win, you must guess the number correctly. The result will be shown in the label at the bottom of the game group box.  "/></TextBlock>
+        <Button x:Name="btn_MysNum" Content="Guess the Mystery Number" HorizontalAlignment="Left" Margin="190,130,0,0" VerticalAlignment="Top" Width="100" Height="100" Background="#FF213E8D" BorderBrush="White" Click="btn_MysNum_Click" Foreground="White"/>
+        <Button x:Name="btn_Lower" Content="Lower My Guess" HorizontalAlignment="Left" Margin="61,265,0,0" VerticalAlignment="Top" Width="229" Height="44" Background="#FF213E8D" BorderBrush="White" Click="btn_Lower_Click" Foreground="White"/>
+        <Button x:Name="btn_HideHelp" Content="Hide Help Instructions" HorizontalAlignment="Left" Margin="434,277,0,0" VerticalAlignment="Top" Width="229" Height="42" Background="#FF213E8D" Click="btn_HideHelp_Click" BorderBrush="White" Foreground="White"/>
+        <Button x:Name="btn_Ellipsis" Content="..." HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="btn_Ellipsis_Click"/>
+        <Label x:Name="lbl_PlayerGuess" Content="5" HorizontalAlignment="Left" Margin="75,130,0,0" VerticalAlignment="Top" Width="79" Height="96" FontSize="72"/>
+        <Label x:Name="lbl_Answer" Content="You haven't made a guess yet?" HorizontalAlignment="Left" Margin="10,309,0,0" VerticalAlignment="Top" Width="381" Foreground="White" FontSize="16" Height="60"/>
+
+    </Grid>
+</Window>
